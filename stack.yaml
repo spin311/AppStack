@@ -10,6 +10,8 @@ services:
     environment:
      - MONGO_INITDB_ROOT_USERNAME=username
      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+     - mongo-data:/data/db
   
   mongoDocker-Express:
     image: mongo-express
@@ -20,3 +22,7 @@ services:
      - ME_CONFIG_MONGODB_ADMINUSERNAME=username
      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
      - ME_CONFIG_MONGODB_SERVER=mongodocker
+
+volumes:
+  mongo-data:
+    driver: local
