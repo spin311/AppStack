@@ -1,0 +1,26 @@
+{
+  "name": "appstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spin311/AppStack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spin311/AppStack/issues"
+  },
+  "homepage": "https://github.com/spin311/AppStack#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {}
+}
