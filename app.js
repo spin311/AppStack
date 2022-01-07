@@ -4,6 +4,7 @@ require('dotenv/config');
 var app = express();
 var PORT = 3000;
 
+app.set('view engine', 'ejs');
 
 const { MongoClient } = require('mongodb');
 const uri = process.env.DB_CONNECTION;
