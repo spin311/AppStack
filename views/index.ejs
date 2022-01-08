@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
 <head>
   <meta charset="UTF-8">
   <title>BMI Calculator</title>
@@ -37,7 +43,7 @@
       <td><%= item.weight %></td>
       <td><%= item.height %></td>
       <td><%= item.bmi.toFixed(2) %></td>
-      <td><%= item.date %></td>
+      <td>  Date: <%= item.date %></td>
       </tr>
       <% }); %> 
   </table>  
