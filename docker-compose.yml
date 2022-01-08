@@ -10,7 +10,14 @@ services:
 
     external_links:
       - mongo
-  
+  app:
+    image: nginx
+    container_name: rev-proxy
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - '81:81'
+      - '443:443'
   mongo:
     image: mongo
     container_name: mongoBMI
