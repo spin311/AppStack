@@ -15,9 +15,9 @@ services:
     image: mongo
     container_name: mongoBMI
     volumes:
-      - mongodb:/data/db
+      - mongoBMI:/data/db
     ports:
       - '27017:27017'
 
 volumes:
- mongodb:
+ mongoBMI:
