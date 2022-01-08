@@ -1,5 +1,8 @@
 version: '3'
 services:
+  gcc:
+    build: 
+      context: "./multistage"
   mongo-express:
     image: mongo-express
     container_name: expressBMI
