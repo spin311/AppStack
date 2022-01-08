@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <h1>BMI Calculator</h1>
+  <form method="post" action="/item/add">
+    <p>Name</p>
+    <input type="text" name="name">
+
+    <p>Height (in cm) </p>
+
+    <input type="number" name="height">
+
+    <p>Weight (in kg) </p>
+
+    <input type="number" name="weight"> 
+    <input type="submit" value="Add">
+    <!-- <label for="name">Name</label>
+    <input type="text" name="name">
+    <input type="submit" value="Add"> -->
+  </form>
+  <h4>User Data:</h4>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>weight (kg)</th>
+      <th>height (cm)</th>
+      <th><bold>BMI</bold></th>
+      <th>date</th>
+    </tr>  
+    <% items.forEach(function(item) {%>
+      <tr>
+      <td><%= item.name%></td>
+      <td><%= item.weight %></td>
+      <td><%= item.height %></td>
+      <td><%= item.bmi.toFixed(2) %></td>
+      <td><%= item.date %></td>
+      </tr>
+      <% }); %> 
+  </table>  
+
+  <!-- <ul>
+    <% items.forEach(function(item) { %>
+      <li>
+        Person: <%= item.name%>
+        <%= item.weight %> kg
+        <%= item.height %> cm
+        <%= item.weight / (item.height * (item.height / 10000).toFixed(2))%> bmi
+        <%= item.date %>
+      </li>
+      <% }); %>
+  </ul> -->
+</body>
+
+</html>
