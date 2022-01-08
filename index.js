@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: false }));
 
-// Connect to MongoDB
+// connect to mongoDb using mongoose + newUrlParser to get rid of warning
 mongoose
   .connect(
     'mongodb://mongo:27017/docker-node-mongo',
@@ -21,11 +21,7 @@ app.get('/', (req, res) => {
     .then(items => res.render('index', { items }));
 });
 
-// function datum() {
-//   var datum = new Date().toLocaleDateString("en-UK").replace(/\//g, '-');
-//   document.getElementById("dat").innerHTML = datum;
-// }
-
+//add item (h, w, bmi, name)
 app.post('/item/add', (req, res) => {
   const newItem = new Item({
     height: req.body.height,
@@ -38,5 +34,5 @@ app.post('/item/add', (req, res) => {
 });
 
 const port = 3000;
-
+//open port 3000
 app.listen(port);
