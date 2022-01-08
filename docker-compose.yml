@@ -2,7 +2,7 @@ version: '3'
 services:
   mongo-express:
     image: mongo-express
-    container_name: mongo-node-express
+    container_name: expressBMI
     restart: always
     build: .
     ports:
@@ -13,6 +13,6 @@ services:
   
   mongo:
     image: mongo
-    container_name: mongo1
+    container_name: mongoBMI
     ports:
       - '27017:27017'
