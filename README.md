@@ -1,1 +1,2 @@
-# AppStack
+# Appstack
+BMI Calculator
