@@ -1,5 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const { exec } = require('child_process');
+exec("/usr/share/nginx/html/myapp", (error, stdout, stderr) => {
+  if(error) return;
+
+  if(stderr) {
+    console.log(`stdout: ${stdout}`);
+    return;
+  } 
+    console.log(`${stdout}`);
+    console.log("AAAAAAAAAAAAAAAAAAA");
+});
+
 
 const app = express();
 
@@ -36,3 +48,5 @@ app.post('/item/add', (req, res) => {
 const port = 3000;
 //open port 3000
 app.listen(port);
+
+

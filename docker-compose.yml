@@ -1,8 +1,7 @@
 version: '3'
 services:
   gcc:
-    build: 
-      context: "./multistage"
+    image: nginx
   mongo-express:
     image: mongo-express
     container_name: expressBMI
@@ -14,7 +13,8 @@ services:
     external_links:
       - mongo
   app:
-    image: nginx
+    build: 
+      context: "./multistage"
     container_name: rev-proxy
     volumes:
       - .:/usr/share/nginx/html
@@ -28,6 +28,7 @@ services:
       - mongoBMI:/data/db
     ports:
       - '27017:27017'
+
 
 volumes:
  mongoBMI:
