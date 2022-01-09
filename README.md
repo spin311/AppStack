@@ -46,7 +46,8 @@ I've used the official gcc image in order to compile a simple ```.c``` program i
 For multistage build I've compited a simple ```main.c``` program that prints out web app's descriptions, used a gcc to compile it and sent the output to console.log in the web app using nginx as proxy.
 
 ## **CI/CD**
-![CI/CD](pictures/CICD.png?raw=true "CI/CD")
+![CI/CD](./pictures/CICD.png?raw=true "CI/CD")
+
 For CI/CD I used github actions, with a DockerHub PAT (Personal Access Token).
 
 ## **Frontend**
@@ -55,7 +56,6 @@ Simple css was used for the ```<table>``` tag.
 <br>
 
 ![Frontend](pictures/Frontend.png?raw=true "Frontend")
-
 
 ###### **Possible improvements:**
 I'm quite happy with the app I've built. If I had more time and resources I could add option to delete specific entry, maybe add multiple web-pages and connect them with nginx. 
