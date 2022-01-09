@@ -28,10 +28,10 @@ The biggest challenge was getting the input data in format that I intended and d
 Finding a bug when server didn't run also proved to be quite difficult, I had to revert to previous commit multiple times in order to get back to working version. In that view git proved quite useful.
 
 # Solution and Software
-![Solution](./Pictures/Solution.png?raw=true "Solution")
+![Solution](./pictures/Solution.png?raw=true "Solution")
 I've decided to build a BMI Calculator that stores input data, calculates BMI and date as that is something that I think myself and many other people will find useful, especially with all the New Year's resolutions. 
 ## **Backend:**
-![cmd](Pictures/cmd.png?raw=true "cmd")
+![cmd](pictures/cmd.png?raw=true "cmd")
 ###### **MongoDB:**
 I've used mongoDB becasue its popular, open source and I've read that its quite fast and reliable.
 In each object Item I store input data (height, weight, name) with current date and persons BMI.
@@ -48,7 +48,7 @@ For multistage build I've compited a simple ```main.c``` program that prints out
 ## **Frontend**
 For frontend I've used ```.ejs``` because it was easier for me to display all the data on the page. 
 Simple css was used for the ```<table>``` tag.
-![Frontend](Screenshots/Frontend.png?raw=true "Frontend")
+![Frontend](pictures/Frontend.png?raw=true "Frontend")
 
 ###### **Possible improvements:**
 I'm quite happy with the app I've built. If I had more time and resources I could add option to delete specific entry, maybe add multiple web-pages and connect them with nginx. 
