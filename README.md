@@ -49,9 +49,9 @@ For multistage build I've compited a simple ```main.c``` program that prints out
 For frontend I've used ```.ejs``` because it was easier for me to display all the data on the page. 
 Simple css was used for the ```<table>``` tag.
 <br>
-<div>
+
 ![Frontend](pictures/Frontend.png?raw=true "Frontend")
-</div>
+
 
 ###### **Possible improvements:**
 I'm quite happy with the app I've built. If I had more time and resources I could add option to delete specific entry, maybe add multiple web-pages and connect them with nginx. 
