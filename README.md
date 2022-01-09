@@ -46,7 +46,8 @@ I've used the official gcc image in order to compile a simple ```.c``` program i
 For multistage build I've compited a simple ```main.c``` program that prints out web app's descriptions, used a gcc to compile it and sent the output to console.log in the web app using nginx as proxy.
 
 ## **CI/CD**
-For CI/CD I use github actions, with a DockerHub PAT (Personal Access Token).
+![CI/CD](pictures/CICD.png?raw=true "CI/CD")
+For CI/CD I used github actions, with a DockerHub PAT (Personal Access Token).
 
 ## **Frontend**
 For frontend I've used ```.ejs``` because it was easier for me to display all the data on the page. 
