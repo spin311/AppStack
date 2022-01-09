@@ -28,7 +28,7 @@ The biggest challenge was getting the input data in format that I intended and d
 Finding a bug when server didn't run also proved to be quite difficult, I had to revert to previous commit multiple times in order to get back to working version. In that view git proved quite useful.
 
 # Solution and Software
-![Solution](Pictures/Solution.png?raw=true "Solution")
+![Solution](./Pictures/Solution.png?raw=true "Solution")
 I've decided to build a BMI Calculator that stores input data, calculates BMI and date as that is something that I think myself and many other people will find useful, especially with all the New Year's resolutions. 
 ## **Backend:**
 ![cmd](Pictures/cmd.png?raw=true "cmd")
