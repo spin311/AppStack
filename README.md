@@ -29,6 +29,7 @@ Finding a bug when server didn't run also proved to be quite difficult, I had to
 
 # Solution and Software
 ![Solution](./pictures/Solution.png?raw=true "Solution")
+<br>
 I've decided to build a BMI Calculator that stores input data, calculates BMI and date as that is something that I think myself and many other people will find useful, especially with all the New Year's resolutions. 
 ## **Backend:**
 ![cmd](pictures/cmd.png?raw=true "cmd")
